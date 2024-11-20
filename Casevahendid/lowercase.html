@@ -1,0 +1,187 @@
+<!-- Mis on uppercase vahendid -->
+ <!-- mille jaoks neid kasutatakse-->
+  <!-- milliseid vahendeid olen ise juba kasutanud -->
+  <!--  2 näidet uppercase vahendist, mida veel kasutanud ei ole -->
+<!-- tööriista nimi / logo -->
+<!--tööriista programmi akna pilti-->
+<!--mida tööriistaga teha saab-->
+
+<!--  viited juurde igale lehele, kust saadud on-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lowercase</h1> 
+
+    <h2>Mis on Lowercase?</h2> 
+    <p>Need tööriistad on tarkvara arenduses tööriistad, mis toetavad süsteemi arendamise hilisemaid etappe, keskendudes koodigeneratsioonile, testimisele, dokumentatsioonile ja tarkvara hooldusele. Need vahendid aitavad arendajatel automatiseerida, hallata ja täiustada süsteemi elluviimise ja hooldamise protsesse.</p>
+ 
+    <hr/>
+
+    <h2>Milleks Lowercase vahendeid kasutatakse?</h2> 
+    <p>Lowercase vahendeid kasutatakse järgmistel eesmärkidel:
+
+        <li><b>Koodigeneratsiooniks</b> – automatiseeritud koodi loomine disaini alusel.</li>
+        <li> <b>Testimiseks</b> – Testimisvahendite pakkumine tarkvara kvaliteedi tagamiseks, sealhulgas üksuse testimine, integreerimistestimine jne.</li>
+            <li> <b>Dokumentatsiooni loomine</b> – Dokumentide automaatne genereerimine süsteemi arendamise, koodide ja testide kohta.</li>
+            <li> <b>Versioonihalduseks</b> – Koodimuudatuste haldamine, versioonide jälgimine ja meeskonnatöö toetamine.</li>
+ 
+    <hr/>
+
+    <h2>Loe ka neid:</h2>
+    <u1>
+        <li> <a href=" casevahendid/lowercase.html">lowercase</a> </li>
+    </u1>
+    <u1>
+        <li> <a href=" casevahendid/uppercase.html">uppercase</a> </li>
+    </u1>
+    <u1>
+        <li> <a href=" Casevahendid/main.html">casevahendid</a> </li>
+    </u1>
+    <br/>
+    <table border="1" cellpadding="10" style="border-color: green; border-collapse: collapse;">
+        <tr>
+            <th style="border: 1px solid green; padding: 8px;">Case</th>
+            <th style="border: 1px solid green; padding: 8px;">Fookus</th>
+            <th style="border: 1px solid green; padding: 8px;">Eesmärk</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid green; padding: 8px;">Lowercase</td>
+            <td style="border: 1px solid green; padding: 8px;"> Arenduse hilisemad faasid (koodimine, testimine, hooldus) </td>
+            <td style="border: 1px solid green; padding: 8px;">Koodi arendamine, testimine, integratsioon, versioonihaldus</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid green; padding: 8px;">Uppercase</td>
+            <td style="border: 1px solid green; padding: 8px;">Arenduse algusfaasid (analüüs, disain, modelleerimine)</td>
+            <td style="border: 1px solid green; padding: 8px;">Süsteemi planeerimine, nõuete kogumine, modelleerimine</td>
+        </tr>
+    </table>
+    <br/>
+    <table>
+        <br/>
+        <br/>
+        <br/>
+          <tr>
+              <td>Pilt</td>
+              <td>
+                  <div class="thumbnail">
+                      <img src="../elutsykkel/Pildid/cased.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
+                  </div>
+              </td>
+          </tr>
+      </table>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+
+    <br/>
+    
+
+            <!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Pisipilt</title>
+    <style>
+        .thumbnail img { width: 100px; cursor: pointer; } /* Väike pilt */
+        #lightbox { /* Lightbox suure pildi jaoks */
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.8); display: none; justify-content: center; align-items: center;
+        }
+        #lightbox img { max-width: 90%; max-height: 90%; }
+    </style>
+</head>
+<body>
+
+
+
+<div id="lightbox" onclick="hideLightbox()">
+    <img src="" alt="Pildi vaatamine">
+</div>
+
+<script>
+    function showLightbox(src) {
+        document.getElementById('lightbox').style.display = 'flex';
+        document.getElementById('lightbox').querySelector('img').src = src;
+    }
+    function hideLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
+</body>
+</html>
+        <h2>Lowercase vahendid, mida veel kasutanud ei ole</h2> 
+        <table>
+          <br/>
+          <br/>
+          <br/>
+            <tr>
+                <td>Pilt</td>
+                <td>
+                    <div class="thumbnail">
+                        <img src="../elutsykkel/Pildid/junit.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    <p><b>JUnit</b>- JUnit võimaldab arendajatel kirjutada ja käivitada automaatseid üksusteste (unit tests), et veenduda, et erinevad koodiplokid töötavad õigesti.</p>
+    <p><b>Peamised omadused</b>
+      <li>Testide kirjutamine ja täitmine.</li>
+        <li>Üksuse testide automaatne käivitamine.</li>
+      <li>Integreerimine CI tööriistadega (nt Jenkins).</li>
+      <li>Testide tulemuste analüüs ja aruandlus.</li></p>
+      <br/>
+      <table>
+        <br/>
+        <br/>
+        <br/>
+          <tr>
+              <td>Pilt</td>
+              <td>
+                  <div class="thumbnail">
+                      <img src="../elutsykkel/Pildid/git.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
+                  </div>
+              </td>
+          </tr>
+      </table>
+      <p><b>Git</b>- versioonihaldussüsteem (VCS), mida kasutatakse koodi muudatuste jälgimiseks ja haldamiseks. Git võimaldab meeskonnatööd, koodimuudatuste haldamist ja versioonide jälgimist.</p>
+    <p><b>Peamised omadused</b>
+      <li>Koodimuudatuste jälgimine ja haldamine.</li>
+        <li>Meeskonnatöö võimaldamine koodide arendamisel.</li>
+      <li>Koodiversioonide haldamine (commitid, branchid, pull requestid jne).</li>
+      <li>Üksikasjalik ajaloo ja muutuste analüüs.</li></p>
+    <hr/>
+
+    <h2>Milliseid vahendeid olen ise juba kasutanud?</h2> 
+    <p>Ei ole</p>
+
+    <hr/>
+        <br/>
+
+
+        <h2>Kasutatud kirjandus</h2>
+        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/131_casevahendite_kasutuseesmrgid_ja_klassifikatsioon.html">Klikka siia</a>
+        <br/>
+        <a href="https://www.tutorialspoint.com/software_engineering/case_tools_overview.htm">Või siia</a>
+        <br/>
+        <a href="https://www.gchamirpur.org/wp-content/uploads/2023/09/Unit4-Lecture-12-CASE-Tools.pdf">Või siia</a>
+        <br/>
+        <a href=https://www.softwaretestinghelp.com/junit-tests-examples/>Või siia</a>
+        <br/>
+        <a href=https://www.softwaretestinghelp.com/junit-tests-examples/>Või siia</a>
+        <br/>
+        <a href=https://www.edureka.co/blog/git-tutorial/>Või siia</a>
+        <br/>
+        <tr>
+            <td colspan="4"><a href=https://github.com/Annelisss">Siin on minu githubi profiil</a></td>
+        </tr>
+    </table>
+</body>
+</html>
