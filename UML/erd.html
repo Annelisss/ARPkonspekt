@@ -1,12 +1,31 @@
-<!-- Mis on uppercase vahendid -->
- <!-- mille jaoks neid kasutatakse-->
-  <!-- milliseid vahendeid olen ise juba kasutanud -->
-  <!--  2 näidet uppercase vahendist, mida veel kasutanud ei ole -->
-<!-- tööriista nimi / logo -->
-<!--tööriista programmi akna pilti-->
-<!--mida tööriistaga teha saab-->
+<!-- Tehke omal ainemappi UML Diagrammide jaoks eraldi saidi osa.
 
-<!--  viited juurde igale lehele, kust saadud on-->
+Kirjutage sinna eraldi osa flowcharti ja ERD diagrammi kohta. (Flowcharti oleme juba kasutanud bitcoin kalkulaatori juures, ERDd veel mitte)
+https://drawio-app.com/examples/
+https://drawio-app.com/erd/
+https://drawio-app.com/blog/uml-diagrams/
+
+UML indeks:
+- loetleb üles lingid spetsiifilistele uml diagrammidele
+- kirjeldab ära misasi üleüldse on Unified Modeling Language (UML)
+
+UML > ERD:
+ - Kirjeldab ära mis on ERD diagrammid
+ - Kus neid kasutatakse
+ - toob välja eraldi joonistega ühenduselemendid
+ - mis on Primary Key, Foreign Key, Composite Key, ja lihtsalt Key?
+ - Viited infoallikaile
+
+UML > Flowchart_
+ - Kirjeldab ära mis on Flowchart diagrammid
+ - Kus neid kasutatakse
+ - toob välja eraldi kujundite tähendused
+ - Viitab näidisena juba eelnevalt Bitcoinäpi tegemisel tehtud Vooskeemi juurde
+ - Viited infoallikaile
+
+
+
+esitusena on kolm committi, üks indeksi kohta, teine flowchart kohta, kolmas ERD kohta-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,31 +36,32 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Uppercase</h1> 
+    <h1>Lowercase</h1> 
 
-    <h2>Mis on Uppercase?</h2> 
-    <p>CASE-vahendid (Computer-Aided Software Engineering) on tarkvara tööriistad, mis toetavad tarkvaraarenduse ja süsteemide väljatöötamise protsessi. Need vahendid on mõeldud selleks, et automatiseerida ja lihtsustada tarkvaraarenduse ülesandeid, suurendada efektiivsust, parandada kvaliteeti ning vähendada arendusaja- ja kulusid. CASE-vahendid võivad katta kogu arendusprotsessi alates planeerimisest kuni koodi testimise ja hoolduseni.</p>
+    <h2>Mis on Lowercase?</h2> 
+    <p>Need tööriistad on tarkvara arenduses tööriistad, mis toetavad süsteemi arendamise hilisemaid etappe, keskendudes koodigeneratsioonile, testimisele, dokumentatsioonile ja tarkvara hooldusele. Need vahendid aitavad arendajatel automatiseerida, hallata ja täiustada süsteemi elluviimise ja hooldamise protsesse.</p>
  
     <hr/>
 
-    <h2>Milleks Uppercase vahendeid kasutatakse?</h2> 
-    <p>Uppercase vahendeid kasutatakse eelkõige järgmisteks eesmärkideks:
+    <h2>Milleks Lowercase vahendeid kasutatakse?</h2> 
+    <p>Lowercase vahendeid kasutatakse järgmistel eesmärkidel:
 
-        <li><b>Süsteemi planeerimine</b> – Projektijuhtidele ja analüütikutele süsteemi nõuete ja disaini selgeks määratlemiseks.</li>
-        <li> <b>Modelleerimine</b> – Süsteemi arhitektuuri ja komponentide visualiseerimiseks, mis aitab luua tugeva aluse tarkvara edasiseks arendamiseks.</li>
-            <li> <b>Dokumentatsiooni loomine</b> – Loob dokumentatsiooni, mis sisaldab süsteemi arhitektuuri, komponente ja äriprotsesse.</li>
+        <li><b>Koodigeneratsiooniks</b> – automatiseeritud koodi loomine disaini alusel.</li>
+        <li> <b>Testimiseks</b> – Testimisvahendite pakkumine tarkvara kvaliteedi tagamiseks, sealhulgas üksuse testimine, integreerimistestimine jne.</li>
+            <li> <b>Dokumentatsiooni loomine</b> – Dokumentide automaatne genereerimine süsteemi arendamise, koodide ja testide kohta.</li>
+            <li> <b>Versioonihalduseks</b> – Koodimuudatuste haldamine, versioonide jälgimine ja meeskonnatöö toetamine.</li>
  
     <hr/>
 
     <h2>Loe ka neid:</h2>
     <u1>
-        <li> <a href="../casevahendid/lowercase.html">lowercase</a> </li>
+        <li> <a href=" casevahendid/lowercase.html">lowercase</a> </li>
     </u1>
     <u1>
-        <li> <a href="../casevahendid/uppercase.html">uppercase</a> </li>
+        <li> <a href=" casevahendid/uppercase.html">uppercase</a> </li>
     </u1>
     <u1>
-        <li> <a href="../Casevahendid/main.html">casevahendid</a> </li>
+        <li> <a href=" Casevahendid/main.html">casevahendid</a> </li>
     </u1>
     <br/>
     <table border="1" cellpadding="10" style="border-color: green; border-collapse: collapse;">
@@ -116,7 +136,7 @@
 </script>
 </body>
 </html>
-        <h2>Uppercase vahendid, mida veel kasutanud ei ole</h2> 
+        <h2>Lowercase vahendid, mida veel kasutanud ei ole</h2> 
         <table>
           <br/>
           <br/>
@@ -125,16 +145,17 @@
                 <td>Pilt</td>
                 <td>
                     <div class="thumbnail">
-                        <img src="../elutsykkel/Pildid/rose.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
+                        <img src="../elutsykkel/Pildid/junit.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
                     </div>
                 </td>
             </tr>
         </table>
-    <p><b>IBM Rational Rose</b>- on tarkvara modelleerimisvahend, mis toetab UML (Unified Modeling Language) kasutamist süsteemide ja rakenduste projekteerimisel. See tööriist võimaldab arendajatel ja analüütikutel luua diagramme, mis esindavad süsteemi struktuuri, protsesside voogu ja muid arhitektuuri aspekte. IBM Rational Rose'i kasutatakse peamiselt tarkvara arenduse algfaasis, et luua visuaalseid mudeleid, mis aitavad mõista ja dokumenteerida süsteemi nõudeid ja disaini.</p>
+    <p><b>JUnit</b>- JUnit võimaldab arendajatel kirjutada ja käivitada automaatseid üksusteste (unit tests), et veenduda, et erinevad koodiplokid töötavad õigesti.</p>
     <p><b>Peamised omadused</b>
-      <li>UML-diagrammide loomine (klassidiagrammid, tegevusdiagrammid, järjestusdiagrammid jne).</li>
-        <li>Süsteemide modelleerimine ja analüüs.</li>
-      <li>Integreeritud töövoogude haldamine ja automaatne koodigeneratsioon.</li></p>
+      <li>Testide kirjutamine ja täitmine.</li>
+        <li>Üksuse testide automaatne käivitamine.</li>
+      <li>Integreerimine CI tööriistadega (nt Jenkins).</li>
+      <li>Testide tulemuste analüüs ja aruandlus.</li></p>
       <br/>
       <table>
         <br/>
@@ -144,17 +165,17 @@
               <td>Pilt</td>
               <td>
                   <div class="thumbnail">
-                      <img src="../elutsykkel/Pildid/para.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
+                      <img src="../elutsykkel/Pildid/git.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
                   </div>
               </td>
           </tr>
       </table>
-      <p><b>Visual Paradigm</b>- UML modelleerimistööriist, mida kasutatakse tarkvara arenduses süsteemide ja rakenduste analüüsimiseks ja projekteerimiseks. See tööriist toetab mitmesuguseid modelleerimisstandardeid ja -tehnikaid, sealhulgas UML, BPMN, ERD (Entity Relationship Diagram) ja palju muud. Visual Paradigm pakub ka koostöövõimalusi meeskondadele, kes töötavad sama projekti kallal, ning aitab automatiseerida arenduse erinevaid etappe alates nõudmiste analüüsist kuni koodigeneratsioonini.</p>
+      <p><b>Git</b>- versioonihaldussüsteem (VCS), mida kasutatakse koodi muudatuste jälgimiseks ja haldamiseks. Git võimaldab meeskonnatööd, koodimuudatuste haldamist ja versioonide jälgimist.</p>
     <p><b>Peamised omadused</b>
-      <li>UML, BPMN ja ERD diagrammide loomine.</li>
-        <li>Süsteemide analüüs ja disain.</li>
-      <li>Meeskonnatöö ja versioonihaldus.</li>
-      <li>Toetab koodigeneratsiooni ja teenuste modelleerimist.</li></p>
+      <li>Koodimuudatuste jälgimine ja haldamine.</li>
+        <li>Meeskonnatöö võimaldamine koodide arendamisel.</li>
+      <li>Koodiversioonide haldamine (commitid, branchid, pull requestid jne).</li>
+      <li>Üksikasjalik ajaloo ja muutuste analüüs.</li></p>
     <hr/>
 
     <h2>Milliseid vahendeid olen ise juba kasutanud?</h2> 
@@ -171,9 +192,11 @@
         <br/>
         <a href="https://www.gchamirpur.org/wp-content/uploads/2023/09/Unit4-Lecture-12-CASE-Tools.pdf">Või siia</a>
         <br/>
-        <a href=https://www.startertutorials.com/uml/introduction-rational-rose.html>Või siia</a>
+        <a href=https://www.softwaretestinghelp.com/junit-tests-examples/>Või siia</a>
         <br/>
-        <a href=https://cs.gmu.edu/~aobaidi/spring_06/HowToInstallRationalRose.pdf>Või siia</a>
+        <a href=https://www.softwaretestinghelp.com/junit-tests-examples/>Või siia</a>
+        <br/>
+        <a href=https://www.edureka.co/blog/git-tutorial/>Või siia</a>
         <br/>
         <tr>
             <td colspan="4"><a href=https://github.com/Annelisss">Siin on minu githubi profiil</a></td>
