@@ -36,171 +36,462 @@ esitusena on kolm committi, üks indeksi kohta, teine flowchart kohta, kolmas ER
     <title>Document</title>
 </head>
 <body>
-    <h1>Lowercase</h1> 
+    <h1 style="
+    font-family: 'Cursive', sans-serif; /* Elegantne ja õrn font */
+    font-size: 3em; /* Suur pealkiri */
+    color: #FF69B4; /* Ilus roosa toon */
+    text-align: center; /* Keskjoondus */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Kerge vari */
+    margin: 40px 0; /* Ülemine ja alumine vahe */
+    padding: 15px; /* Ruumi ümber pealkirja */
+    background: linear-gradient(to right, #FFB6C1, #FF69B4); /* Roosa gradient */
+    border-radius: 15px; /* Ümarad servad */
+    border: 2px solid #FF69B4; /* Peen roosa serv */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Pehme varju efekt */
+">
+    ERD
+</h1>
+<h2 style="
+font-family: 'Verdana', sans-serif;
+font-size: 2em;
+color: #4CAF50;
+text-align: center;
+text-transform: uppercase;
+margin: 30px 0;
+padding-bottom: 10px;
+border-bottom: 3px solid #4CAF50;
+letter-spacing: 1px;
+"> Mis on ERD diagrammid?
+</h2>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD Diagramm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fondi määramine kogu lehele */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        ERD ehk Entity-Relationship Diagram on graafiline tööriist, mida kasutatakse andmebaasi struktuuri visualiseerimiseks. See kujutab entiteete (andmebaasitabelid), nende vahelisi seoseid ja atribuutide struktuuri. ERD-d aitavad mõista andmete loogilisi seoseid ja disainida hästi struktureeritud andmebaase.
+    </p>
 
-    <h2>Mis on Lowercase?</h2> 
-    <p>Need tööriistad on tarkvara arenduses tööriistad, mis toetavad süsteemi arendamise hilisemaid etappe, keskendudes koodigeneratsioonile, testimisele, dokumentatsioonile ja tarkvara hooldusele. Need vahendid aitavad arendajatel automatiseerida, hallata ja täiustada süsteemi elluviimise ja hooldamise protsesse.</p>
+
+
+<h2 style="
+font-family: 'Verdana', sans-serif;
+font-size: 2em;
+color: #4CAF50;
+text-align: center;
+text-transform: uppercase;
+margin: 30px 0;
+padding-bottom: 10px;
+border-bottom: 3px solid #4CAF50;
+letter-spacing: 1px;
+">
+Kus ERD kasutatakse?
+</h2>
+
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Andmebaaside projekteerimisel
+</p>
+
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Andmeanalüüsis ja süsteemide disainis
+</p>
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Ärilahenduste modelleerimisel
+</p>
+
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Andmete optimeerimisel
+</p>
  
-    <hr/>
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Kommunikatsioonivahendina
+</p>
 
-    <h2>Milleks Lowercase vahendeid kasutatakse?</h2> 
-    <p>Lowercase vahendeid kasutatakse järgmistel eesmärkidel:
+    <h2 style="
+    font-family: 'Verdana', sans-serif;
+    font-size: 2em;
+    color: #4CAF50;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #4CAF50;
+    letter-spacing: 1px;
+    "> ERD Diagrammi Põhilised Ühenduselemendid
+    </h2>
 
-        <li><b>Koodigeneratsiooniks</b> – automatiseeritud koodi loomine disaini alusel.</li>
-        <li> <b>Testimiseks</b> – Testimisvahendite pakkumine tarkvara kvaliteedi tagamiseks, sealhulgas üksuse testimine, integreerimistestimine jne.</li>
-            <li> <b>Dokumentatsiooni loomine</b> – Dokumentide automaatne genereerimine süsteemi arendamise, koodide ja testide kohta.</li>
-            <li> <b>Versioonihalduseks</b> – Koodimuudatuste haldamine, versioonide jälgimine ja meeskonnatöö toetamine.</li>
- 
-    <hr/>
-
-    <h2>Loe ka neid:</h2>
-    <u1>
-        <li> <a href=" casevahendid/lowercase.html">lowercase</a> </li>
-    </u1>
-    <u1>
-        <li> <a href=" casevahendid/uppercase.html">uppercase</a> </li>
-    </u1>
-    <u1>
-        <li> <a href=" Casevahendid/main.html">casevahendid</a> </li>
-    </u1>
-    <br/>
-    <table border="1" cellpadding="10" style="border-color: green; border-collapse: collapse;">
-        <tr>
-            <th style="border: 1px solid green; padding: 8px;">Case</th>
-            <th style="border: 1px solid green; padding: 8px;">Fookus</th>
-            <th style="border: 1px solid green; padding: 8px;">Eesmärk</th>
-        </tr>
-        <tr>
-            <td style="border: 1px solid green; padding: 8px;">Lowercase</td>
-            <td style="border: 1px solid green; padding: 8px;"> Arenduse hilisemad faasid (koodimine, testimine, hooldus) </td>
-            <td style="border: 1px solid green; padding: 8px;">Koodi arendamine, testimine, integratsioon, versioonihaldus</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid green; padding: 8px;">Uppercase</td>
-            <td style="border: 1px solid green; padding: 8px;">Arenduse algusfaasid (analüüs, disain, modelleerimine)</td>
-            <td style="border: 1px solid green; padding: 8px;">Süsteemi planeerimine, nõuete kogumine, modelleerimine</td>
-        </tr>
-    </table>
-    <br/>
-    <table>
-        <br/>
-        <br/>
-        <br/>
-          <tr>
-              <td>Pilt</td>
-              <td>
-                  <div class="thumbnail">
-                      <img src="../elutsykkel/Pildid/cased.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
-                  </div>
-              </td>
-          </tr>
-      </table>
-    <br/>
-    <br/>
-    <br/>
-    <hr/>
-
-    <br/>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f9;
+                color: #333;
+            }
+            h1, h2 {
+                color: #2c3e50;
+            }
+            .container {
+                width: 90%;
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background: #fff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+            pre {
+                background: #272822;
+                color: #f8f8f2;
+                padding: 10px;
+                border-radius: 5px;
+                overflow-x: auto;
+            }
+            .example {
+                margin: 10px 0;
+            }
+            .section {
+                margin-bottom: 20px;
+            }
+            .code-title {
+                font-weight: bold;
+                margin-top: 10px;
+                color: #2980b9;
+            }
+            .highlight {
+                font-weight: bold;
+                color: #27ae60;
+            }
+            .separator {
+                margin: 10px 0;
+                border-bottom: 1px solid #ddd;
+            }
+            .oval {
+                display: inline-block;
+                width: 120px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                border: 2px solid #333;
+                border-radius: 50%;
+                margin: 10px auto;
+                font-weight: bold;
+                color: #2c3e50;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
     
-
+            <div class="section">
+                <h2>Entiteedid</h2>
+                <p>Entiteedid esindavad reaalse maailma objekte, näiteks <span class="highlight">Kliendid</span>, <span class="highlight">Tooted</span>, <span class="highlight">Tellimused</span>. Kujutatakse <strong>ristkülikuna</strong>.</p>
+                <div class="code-title">Näide:</div>
+                <pre>
+    +--------------+
+    |   Kliendid   |
+    +--------------+
+    | Kliendi_ID   |
+    | Nimi         |
+    | Email        |
+    +--------------+</pre>
+            </div>
+    
+            <div class="separator"></div>
+    
+            <div class="section">
+                <h2>Atribuudid</h2>
+                <p>Entiteedi omadused või tunnused. Kujutatakse <strong>ovaalidena</strong> ja ühendatakse entiteediga <strong>joonte abil</strong>.</p>
+                <div class="code-title">Näide:</div>
+                <div class="oval">Nimi</div>
+                <div style="text-align: center;">
+                    |
+                </div>
+                <pre>
+    +--------------+
+    |   Kliendid   |
+    +--------------+</pre>
+            </div>
+    
+            <div class="separator"></div>
+    
             <!DOCTYPE html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Pisipilt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rombi Kujutis</title>
     <style>
-        .thumbnail img { width: 100px; cursor: pointer; } /* Väike pilt */
-        #lightbox { /* Lightbox suure pildi jaoks */
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.8); display: none; justify-content: center; align-items: center;
+        .section {
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
-        #lightbox img { max-width: 90%; max-height: 90%; }
+        h2 {
+            color: #333;
+        }
+        .code-title {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .relation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        .diamond {
+            width: 100px;
+            height: 100px;
+            transform: rotate(45deg);
+            border: 2px solid #000; /* Ainult piirjoon */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: transparent; /* Läbipaistev taust */
+        }
+        .diamond span {
+            transform: rotate(-45deg);
+            font-weight: bold;
+            background-color: white; /* Teksti loetavuse jaoks */
+            padding: 2px 5px;
+        }
+        .entity {
+            margin: 0 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+    <div class="section">
+        <h2>Seosed</h2>
+        <p>Näitavad, kuidas entiteedid on omavahel seotud. Kujutatakse <strong>rombidega</strong>.</p>
+        <div class="code-title">Näide:</div>
+        <div class="relation">
+            <div class="entity">[Kliendid]</div>
+            <div class="diamond">
+                <span>Omandavad</span>
+            </div>
+            <div class="entity">[Tooted]</div>
+        </div>
+    </div>
 
+    
+            <div class="separator"></div>
+    
+            <div class="section">
+                <h2>Seose kardinaalsus</h2>
+                <p>Määrab ära, kui palju esemeid võib olla seotud:</p>
+                <ul>
+                    <li><strong>One-to-One (1:1)</strong></li>
+                    <li><strong>One-to-Many (1:N)</strong></li>
+                    <li><strong>Many-to-Many (M:N)</strong></li>
+                </ul>
+            </div>
+        </div>
+    
+    
+    
+    <html lang="et">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andmebaasi Võtmed</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #ffffff;
+                color: #333333;
+            }
+            h1 {
+                color: #444444;
+                text-align: center;
+            }
+            h2 {
+                color: #4CAF50; /* Roheline värv */
+                margin-top: 20px;
+            }
+            .definition {
+                padding: 10px;
+                border-left: 5px solid #4CAF50; /* Roheline piirjoon */
+                background-color: #f9f9f9;
+                margin-bottom: 15px;
+            }
+            strong {
+                color: #4CAF50; /* Roheline rõhutatud tekst */
+            }
+            p {
+                margin: 5px 0;
+            }
+        </style>
+    
+        <h2 style="
+        font-family: 'Verdana', sans-serif;
+        font-size: 2em;
+        color: #4CAF50;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 30px 0;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #4CAF50;
+        letter-spacing: 1px;
+        "> Andmebaasi Võtmete Selgitus
+        </h2>
+        <div class="definition">
+            <h2>Primary Key</h2>
+            <p>
+                <strong>Primary Key</strong> on veerg või veergude kombinatsioon, mis unikaalselt identifitseerib iga kirje tabelis. 
+                Igas tabelis saab olla ainult üks Primary Key, mille väärtused ei tohi korduda ega olla tühi (<em>NULL</em>).
+            </p>
+            <p><em>Näide:</em> Tabelis "Õpilased" on "Õpilase_ID" Primary Key, kuna see tuvastab unikaalselt iga õpilase.</p>
+        </div>
+    
+        <div class="definition">
+            <h2>Foreign Key</h2>
+            <p>
+                <strong>Foreign Key</strong> on veerg, mis viitab teise tabeli Primary Key-le ja loob seose kahe tabeli vahel.
+            </p>
+            <p><em>Näide:</em> Kui tabelis "Klassid" on "Õpilase_ID", mis viitab tabeli "Õpilased" Primary Key-le, siis see on Foreign Key.</p>
+        </div>
+    
+        <div class="definition">
+            <h2>Composite Key</h2>
+            <p>
+                <strong>Composite Key</strong> on kahe või enama veeru kombinatsioon, mis koos unikaalselt identifitseerivad kirje. 
+                Üksikud veerud ei pruugi olla unikaalsed, aga kombinatsioon peab olema.
+            </p>
+            <p><em>Näide:</em> Tabelis "Osalemine" moodustab kombinatsioon "Õpilase_ID" ja "Kursuse_ID" Composite Key.</p>
+        </div>
+    
+        <div class="definition">
+            <h2>Key (Lihtsalt võti)</h2>
+            <p>
+                <strong>Key</strong> on üldine termin, mis viitab veerule või veergude kombinatsioonile, mida kasutatakse kirjete identifitseerimiseks või tabelite vahel seoste loomiseks.
+            </p>
+            <p><em>Näide:</em> Veerg "Email" võib olla Key, kui see unikaalselt tuvastab iga kirje.</p>
+        </div>
+    </html>
 
+    <h2>Klikka siia:</h2>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li style="margin: 10px 0;">
+            <a href="Flowchart.html" style="
+                display: inline-block;
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                color: #ffffff;
+                background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                width: 200px;
+                text-align: center;
+            "
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                Flowchart
+            </a>
+        </li>       
 
-<div id="lightbox" onclick="hideLightbox()">
-    <img src="" alt="Pildi vaatamine">
-</div>
+        <li style="margin: 10px 0;">
+            <a href="uml.html" style="
+                display: inline-block;
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                color: #ffffff;
+                background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                width: 200px;
+                text-align: center;
+            "
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                UML
+            </a>
 
-<script>
-    function showLightbox(src) {
-        document.getElementById('lightbox').style.display = 'flex';
-        document.getElementById('lightbox').querySelector('img').src = src;
-    }
-    function hideLightbox() {
-        document.getElementById('lightbox').style.display = 'none';
-    }
-</script>
-</body>
-</html>
-        <h2>Lowercase vahendid, mida veel kasutanud ei ole</h2> 
-        <table>
-          <br/>
-          <br/>
-          <br/>
-            <tr>
-                <td>Pilt</td>
-                <td>
-                    <div class="thumbnail">
-                        <img src="../elutsykkel/Pildid/junit.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
-                    </div>
-                </td>
-            </tr>
-        </table>
-    <p><b>JUnit</b>- JUnit võimaldab arendajatel kirjutada ja käivitada automaatseid üksusteste (unit tests), et veenduda, et erinevad koodiplokid töötavad õigesti.</p>
-    <p><b>Peamised omadused</b>
-      <li>Testide kirjutamine ja täitmine.</li>
-        <li>Üksuse testide automaatne käivitamine.</li>
-      <li>Integreerimine CI tööriistadega (nt Jenkins).</li>
-      <li>Testide tulemuste analüüs ja aruandlus.</li></p>
-      <br/>
-      <table>
-        <br/>
-        <br/>
-        <br/>
-          <tr>
-              <td>Pilt</td>
-              <td>
-                  <div class="thumbnail">
-                      <img src="../elutsykkel/Pildid/git.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
-                  </div>
-              </td>
-          </tr>
-      </table>
-      <p><b>Git</b>- versioonihaldussüsteem (VCS), mida kasutatakse koodi muudatuste jälgimiseks ja haldamiseks. Git võimaldab meeskonnatööd, koodimuudatuste haldamist ja versioonide jälgimist.</p>
-    <p><b>Peamised omadused</b>
-      <li>Koodimuudatuste jälgimine ja haldamine.</li>
-        <li>Meeskonnatöö võimaldamine koodide arendamisel.</li>
-      <li>Koodiversioonide haldamine (commitid, branchid, pull requestid jne).</li>
-      <li>Üksikasjalik ajaloo ja muutuste analüüs.</li></p>
-    <hr/>
-
-    <h2>Milliseid vahendeid olen ise juba kasutanud?</h2> 
-    <p>Ei ole</p>
-
-    <hr/>
-        <br/>
-
-
-        <h2>Kasutatud kirjandus</h2>
-        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/131_casevahendite_kasutuseesmrgid_ja_klassifikatsioon.html">Klikka siia</a>
-        <br/>
-        <a href="https://www.tutorialspoint.com/software_engineering/case_tools_overview.htm">Või siia</a>
-        <br/>
-        <a href="https://www.gchamirpur.org/wp-content/uploads/2023/09/Unit4-Lecture-12-CASE-Tools.pdf">Või siia</a>
-        <br/>
-        <a href=https://www.softwaretestinghelp.com/junit-tests-examples/>Või siia</a>
-        <br/>
-        <a href=https://www.softwaretestinghelp.com/junit-tests-examples/>Või siia</a>
-        <br/>
-        <a href=https://www.edureka.co/blog/git-tutorial/>Või siia</a>
-        <br/>
-        <tr>
-            <td colspan="4"><a href=https://github.com/Annelisss">Siin on minu githubi profiil</a></td>
-        </tr>
-    </table>
+    </ul>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li style="margin: 10px 0;">
+            <a href="../index.html" style="display: inline-block; font-size: 18px; color: #ffffff; background-color: #8a2be2; padding: 15px 30px; text-decoration: none; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+                Pealeht
+            </a>
+        </li>
+    </ul>
+    <h2>Kasutatud kirjandus:</h2>
+    <a href="https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/">ERD diagrammid</a>
+    <br/>
+    <a href="https://drawio-app.com/erd/">ERD</a>
+    <br/>
+    
+  
+</table>
 </body>
 </html>

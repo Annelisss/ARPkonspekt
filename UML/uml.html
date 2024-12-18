@@ -36,148 +36,248 @@ esitusena on kolm committi, üks indeksi kohta, teine flowchart kohta, kolmas ER
     <title>Document</title>
 </head>
 <body>
-    <h1>CASEvahendid e raaltehnoloogiavahendid</h1> 
-
-    <h2>Mis on Casevahendid?</h2> 
-    <p>CASE-vahendid (Computer-Aided Software Engineering) on tarkvara tööriistad, mis toetavad tarkvaraarenduse ja süsteemide väljatöötamise protsessi. Need vahendid on mõeldud selleks, et automatiseerida ja lihtsustada tarkvaraarenduse ülesandeid, suurendada efektiivsust, parandada kvaliteeti ning vähendada arendusaja- ja kulusid. CASE-vahendid võivad katta kogu arendusprotsessi alates planeerimisest kuni koodi testimise ja hoolduseni.</p>
- 
-    <hr/>
-
-    <h2>Milleks case vahendeid kasutatakse?</h2> 
-    <p>CASE-vahendid aitavad automatiseerida mitmesuguseid tarkvaraarenduse ülesandeid, nagu:
-
-        <li><b>Nõuete analüüs</b> – aitavad koguda ja hallata nõudeid.</li>
-        <li> <b>Süsteemi ja tarkvara modelleerimine</b> – aitavad luua diagramme ja mudeleid (nt UML-diagrammid).</li>
-            <li> <b>Koodigeneratsioon</b> – võimaldavad automaatselt genereerida lähtekoodi mudeleid kasutades.</li>
-                <li><b>Testimine</b> – toetavad automaatseid teste ja veaotsingut.</li>
-                    <li><b>Versioonihaldus</b> – jälgivad ja haldavad koodimuudatusi ja versioone.</li>
-                        <li> <b>Dokumentatsioon</b> – aitavad luua ja hallata tehnilist dokumentatsiooni.</li></p>
-                        <tr>
-                            <td>Pilt</td>
-                            <td>
-                                <div class="thumbnail">
-                                    <img src="../elutsykkel/Pildid/case.jpg " alt="Jogurti pilt" onclick="showLightbox(this.src)">
-                                </div>
-                            </td>
-                        </tr>
-    <hr/>
-
-    <h2>Case vahendid jagatakse:</h2>
-    <u1>
-        <li> <a href="casevahendid/lowercase.html">Lowercase</a> </li>
-    </u1>
-    <u1>
-        <li> <a href="casevahendid/uppercase.html">uppercase</a> </li>
-    </u1>
-    <br/>
-    <table border="1" cellpadding="10" style="border-color: green; border-collapse: collapse;">
-        <tr>
-            <th style="border: 1px solid green; padding: 8px;">Case</th>
-            <th style="border: 1px solid green; padding: 8px;">Fookus</th>
-            <th style="border: 1px solid green; padding: 8px;">Eesmärk</th>
-        </tr>
-        <tr>
-            <td style="border: 1px solid green; padding: 8px;">Lowercase</td>
-            <td style="border: 1px solid green; padding: 8px;"> Arenduse hilisemad faasid (koodimine, testimine, hooldus) </td>
-            <td style="border: 1px solid green; padding: 8px;">Koodi arendamine, testimine, integratsioon, versioonihaldus</td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid green; padding: 8px;">Uppercase</td>
-            <td style="border: 1px solid green; padding: 8px;">Arenduse algusfaasid (analüüs, disain, modelleerimine)</td>
-            <td style="border: 1px solid green; padding: 8px;">Süsteemi planeerimine, nõuete kogumine, modelleerimine</td>
-        </tr>
-    </table>
-    
-    <br/>
-    <hr/>
-
-    <h2>Milliseid vahendeid saab kasutada X* arendusmudeli elutsüklis?</h2> 
-    <p>X* arendusmudeli puhul, mis hõlmab kogu tarkvara arenduse elutsüklit alates nõuete määratlemisest kuni süsteemi hoolduseni, saab kasutada erinevaid CASE-vahendeid igas faasis:
-
-        <li><b>Nõuete määratlemine:</b> JIRA, Confluence – nõuete haldus ja jälgimine.
-            RequisitePro – nõuete haldustööriist.
-            </li>
-        <li> <b>Süsteemi ja tarkvara disain:</b>Visual Paradigm – süsteemide ja tarkvara modelleerimine.
-            Enterprise Architect – UML-diagrammide loomine.</li>
-            <li> <b>Koodi arendamine</b>Eclipse, IntelliJ IDEA – integreeritud arenduskeskkonnad (IDE), mis hõlbustavad koodi kirjutamist.
-                Visual Studio – C#, .NET ja muude Microsofti platvormide jaoks.</li>
-                <li><b>Testimine</b> Selenium, JUnit – automaattestimise vahendid.
-                    TestRail – testide haldus ja aruandlus.</li>
-                    <li><b>Hooldus ja haldus:</b> GitHub, GitLab – versioonihaldus ja koodide hoidla haldus.
-                        Jenkins – pidevintegratsiooni vahend, mis toetab koodi pidevat haldamist ja testimist.</li>
-            
- 
-    <hr/>
-
-    <br/>
-    <br/>
-    
-
-            <!DOCTYPE html>
+    <h1 style="
+    font-family: 'Cursive', sans-serif; /* Elegantne ja õrn font */
+    font-size: 3em; /* Suur pealkiri */
+    color: #FF69B4; /* Ilus roosa toon */
+    text-align: center; /* Keskjoondus */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Kerge vari */
+    margin: 40px 0; /* Ülemine ja alumine vahe */
+    padding: 15px; /* Ruumi ümber pealkirja */
+    background: linear-gradient(to right, #FFB6C1, #FF69B4); /* Roosa gradient */
+    border-radius: 15px; /* Ümarad servad */
+    border: 2px solid #FF69B4; /* Peen roosa serv */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Pehme varju efekt */
+">
+    UML
+</h1>
+<h2 style="
+font-family: 'Verdana', sans-serif;
+font-size: 2em;
+color: #4CAF50;
+text-align: center;
+text-transform: uppercase;
+margin: 30px 0;
+padding-bottom: 10px;
+border-bottom: 3px solid #4CAF50;
+letter-spacing: 1px;
+"> Mis on Unified Modeling Language (UML)?
+</h2>
+<!DOCTYPE html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Pisipilt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart Diagramm</title>
     <style>
-        .thumbnail img { width: 100px; cursor: pointer; } /* Väike pilt */
-        #lightbox { /* Lightbox suure pildi jaoks */
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.8); display: none; justify-content: center; align-items: center;
+        body {
+            font-family: Arial, sans-serif; /* Fondi määramine kogu lehele */
         }
-        #lightbox img { max-width: 90%; max-height: 90%; }
     </style>
 </head>
 <body>
+    <p>
+        Unified Modeling Language (UML) on standardiseeritud visuaalne modelleerimiskeel, mis aitab kirjeldada ja dokumenteerida tarkvarasüsteemide arhitektuuri, komponente ja käitumist. UML võimaldab arendajatel, analüütikutel, süsteemiarhitektidel ja teiste erialade esindajatel ühiselt mõista keerukaid süsteeme, vähendada arusaamatusi ning lihtsustada kommunikatsiooni projekti osapoolte vahel.
+    </p>
 
-
-
-<div id="lightbox" onclick="hideLightbox()">
-    <img src="" alt="Pildi vaatamine">
-</div>
-
-<script>
-    function showLightbox(src) {
-        document.getElementById('lightbox').style.display = 'flex';
-        document.getElementById('lightbox').querySelector('img').src = src;
-    }
-    function hideLightbox() {
-        document.getElementById('lightbox').style.display = 'none';
-    }
-</script>
-</body>
-</html>
-    <h2>Milliseid vahendeid olen ise juba kasutanud?</h2> 
-    <p>Visual Studio</p>
+    
 
     <hr/>
-        <br/>
-        <h2>Tuntumad arendustsüklid</h2> 
-        <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/131_casevahendite_kasutuseesmrgid_ja_klassifikatsioon.html">Agile</a>
-        <p> Agile on iteratiivne ja paindlik tarkvaraarenduse lähenemine, mis keskendub kiirele reageerimisele muutuvatele nõuetele. Arendus toimub väikeste, hallatavate osade (sprindid) kaupa ning see soodustab tihedat koostööd kliendiga.</p>   
-        <br/>
-        <a href="https://www.tutorialspoint.com/sdlc/sdlc_bigbang_model.htm">Big Bang</a>
-        <p>Big Bang on lihtne lähenemine, kus kogu arenduse töö tehakse korraga ilma suure planeerimise ja iteratsioonideta. Kõik komponendid pannakse "ühe hoobiga" kokku ja lõpptulemust testitakse. Sobib väikeste projektide jaoks, kuid riskantne keerukamate süsteemide puhul.</p>   
-        <br/>
-        <a href="https://www.atlassian.com/devops">DevOps</a>
-        <p>DevOps on kultuuriline ja tehniline lähenemine, mis ühendab tarkvara arenduse (Development) ja süsteemide halduse (Operations). Selle eesmärk on parandada arenduskiirust ja töökindlust, kasutades automatiseerimist, pidevat integratsiooni (CI/CD) ja koostööd.</p>   
-        <br/>
-        <a href="https://www.geeksforgeeks.org/software-engineering-extreme-programming-xp/">Extreme Programming (XP)</a>
-        <p>Extreme Programming on Agile'i meetod, mis rõhutab tarkvara arendamise parimaid praktikaid (nt pidev koodiarendus, paarisprogrammeerimine, sagedased väljalasked ja testpõhine arendus). Selle eesmärk on tarnida kvaliteetset tarkvara kiiresti ja tõhusalt.</p>   
-        <br/>
-        <a href="https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/">V-Shape mudel</a>
-        <p>V-Shape (V-kujuline mudel) on klassikaline tarkvaraarenduse mudel, kus iga arenduse etapp (nt nõuded, disain, arendus) vastab kindlale testimise etapile (nt süsteemitestimine, integreerimistestimine). See rõhutab varajast planeerimist ja põhjalikku testimist igas faasis.</p>   
-        <br/>
-        <hr/>
+    <ul>
+        Põhijooned:
 
-        <h2>Kasutatud kirjandus</h2>
-        <a target="_blank" href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/131_casevahendite_kasutuseesmrgid_ja_klassifikatsioon.html">Klikka siia</a>
+            <li>Visuaalsed diagrammid, mis standardiseeritud sümbolite abil esitavad süsteemi erinevaid aspekte.</li>
+            <li>Sobib nii objektiorienteeritud tarkvara modelleerimiseks kui ka äriprotsesside ja muude süsteemide kirjeldamiseks.</li>
+            <li>Aitab jäädvustada ja suhelda disainiotsuseid, vähendada projekti riske ning teha süsteemi arenduse ja hoolduse lihtsamaks.</li>
+        </ul>
+</body>
+</html>
+
+  
+  
+
+
+
+
+<h2 style="
+font-family: 'Verdana', sans-serif;
+font-size: 2em;
+color: #4CAF50;
+text-align: center;
+text-transform: uppercase;
+margin: 30px 0;
+padding-bottom: 10px;
+border-bottom: 3px solid #4CAF50;
+letter-spacing: 1px;
+">
+UML liigid
+</h2>
+
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Struktuuridiagrammid (Structure diagram) näitavad süsteemi staatilist struktuuri:
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/" target="_blank">Klassidiagramm </a>
+Kirjeldab süsteemi klasse, nende atribuute, meetodeid ja seoseid.
+</p>
+<a href="https://www.youtube.com/watch?app=desktop&v=ao1ESgIy2Ws" target="_blank">Objekti diagramm </a>
+Näitab süsteemi hetkeseisu, kus on kirjeldatud objektid ja nende vaheline teave.
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-component-diagram/" target="_blank">Komponentide diagramm </a>
+Näitab süsteemi mooduleid ja nende vahelisi seoseid.
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/" target="_blank">Juurutusdiagramm (Deployment Diagram)</a>
+Illustreerib, kuidas süsteemi komponendid on füüsiliselt jaotatud riistvarale.
+</p>
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Käitumisdiagrammid (Behavior diagram) näitavad süsteemi dünaamilist käitumist:
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-activity-diagram/" target="_blank">Tegevusdiagramm (Activity Diagram)</a>
+Illustreerib protsesside töövoogu, sealhulgas otsuseid ja paralleelseid tegevusi.
+</p>
+<a href="https://www.lucidchart.com/pages/uml-use-case-diagram">Kasutusjuhtumi diagramm (Use Case Diagramm)</a>
+Näitab, kuidas kasutajad suhtlevad süsteemiga ning milliseid funktsioone süsteem pakub.
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/about-state-diagrams/" target="_blank">Oleku diagramm (State Diagram)</a>
+Näitab, kuidas objekt liigub erinevates olekutes vastavalt sündmustele.
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/" target="_blank">Jada Diagramm (Sequence Diagram)</a>
+Näitab, kuidas kasutajad suhtlevad süsteemiga ning milliseid funktsioone süsteem pakub.
+</p>
+<a href="https://guides.visual-paradigm.com/what-is-interaction-diagrams-in-uml/" target="_blank">Koostoimediagramm (Interaction Diagram)</a>
+Näitab, kuidas objekt liigub erinevates olekutes vastavalt sündmustele.
+</p>
+
+</p>
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+</p>
+</p>
+</p>
+</p>
+
+    <hr/>
+
+    <h2>UML diagramm</h2> 
+    <p>
         <br/>
-        <a target="_blank" href="https://www.gchamirpur.org/wp-content/uploads/2023/09/Unit4-Lecture-12-CASE-Tools.pdf">Või siia</a>
-        <br/>
-        <br/>
-        <br/>
+        <tr>
+            <td> <img src="/Pildid/uml.jpg " /> </td>
+        </tr>
+        <tr>
+    <br/>
     
-            <a target="_blank" href=https://github.com/Annelisss>Siin on minu githubi profiil</a>
-           
+    
+    <hr/>
+
+    <h2>Klikka siia:</h2>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li style="margin: 10px 0;">
+            <a href="uml.html" style="
+                display: inline-block;
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                color: #ffffff;
+                background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                width: 200px;
+                text-align: center;
+            "
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                UML
+            </a>
+            
+        </li>
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li style="margin: 10px 0;">
+                <a href="erd.html" style="
+                    display: inline-block;
+                    font-family: Arial, sans-serif;
+                    font-size: 18px;
+                    color: #ffffff;
+                    background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                    padding: 15px 30px;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                    width: 200px;
+                    text-align: center;
+                "
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                    ERD
+                </a>
+                
+            </li>
+        <li style="margin: 10px 0;">
+            <a href="flowchart.html" style="
+                display: inline-block;
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                color: #ffffff;
+                background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                width: 200px;
+                text-align: center;
+            "
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                Flowchart
+            </a>
+
+    </ul>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li style="margin: 10px 0;">
+            <a href="../index.html" style="display: inline-block; font-size: 18px; color: #ffffff; background-color: #8a2be2; padding: 15px 30px; text-decoration: none; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+                Pealeht
+            </a>
+        </li>
+    </ul>
+    <h2>Kasutatud kirjandus:</h2>
+    <a href="https://www.coursera.org/lecture/concepts-of-object-oriented-programming/uml-class-diagrams-RskC0?utm_medium=sem&utm_source=gg&utm_campaign=B2C_EMEA__coursera_FTCOF_career-academy_pmax-multiple-audiences-country-multi&campaignid=20858198824&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&adposition=&creativeid=&hide_mobile_promo&gad_source=1&gclid=CjwKCAiA34S7BhAtEiwACZzv4QMf4Qp4VnvUOexdSv0S8aWwknrytpaxlcMeeRWCQLHkPuD1Enm4rRoCOYgQAvD_BwE">UML</a>
+    <br/>
+    <a href="https://drawio-app.com/blog/uml-diagrams/">UML diagrammid</a>
+    <br/>
+    
+  
+</table>
 </body>
 </html>
