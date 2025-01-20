@@ -1,0 +1,168 @@
+<!-- - Uuendage eelnevat Agile osa nupuga "loe rohkem siit" mis viib teie konspektsaidil 
+ uuele pealehelt kättesaadavale jaotusele
+- See lehe uus osa keskendub spetsiifiliselt erinevatele agiilsetele arendusmetoodikatele. Täpsem sisu:
+- - Kirjeldab agiilset arendust või viitab eelnevalt agiilse kohta kirjutatud lehele
+- - loetleb eraldi lehtedena järgmised programmeerimistiilid mille sisud peaksid sisaldama:
+- = - kirjeldust
+- = - joonis vastava arendustsükli kohta
+- = - selle arendusmeetodi head ja vead
+- = - Näide ühest case-vahendist mis toetab antud arendusstiili arendusmeeskonnatöös (üks vahend võib toetada mitut erinevat arendusstiili, mispuhul sobib kui sama vahend on mitme erineva arendusstiili lehel)
+- = - ning viited/lingid kust saite info.
+- - Agiilsed programmeerimisstiilid:
+- = - Behavior-driven development
+- = - Design-driven development
+- = - Domain-driven design
+- = - Secure by design
+- = - Test-driven development
+- = - Acceptance test-driven development
+- = - Continuous test-driven development
+- = - Specification by example
+- = - Data-driven development
+- = - Data-oriented design
+ 
+Esitusena panete kõik selle osa juurdelisamisega seotud committid (olgu neid siis üks või mitu)
+*JA*
+Lingi selle lehe osa tavakasutajale kättesaadavale live lehele.
+ 
+Ei taha saada repo linke, committide ajaloo linke-->
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design-Driven Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            margin: 0;
+            padding: 0 1.5rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Design-Driven Development (DDD)</h1>
+    </header>
+    <nav>
+        <a href="index.html">Agiilne elutsükkel</a>
+        <a href="#mis-on-ddd">Mis on DDD?</a>
+        <a href="#eelised-ja-puudused">Eelised ja Puudused</a>
+        <a href="#vahendid">Vahendid</a>
+        <a href="#viited">Viited</a>
+    </nav>
+    <nav>
+        <a href="../index.html">Avaleht</a>
+        <a href="behaviour.html">Behavior-driven development</a>
+        <a href="domain-driven.html">Domain-driven design</a>
+        <a href="secure by design.html">Secure by design</a>
+        <a href="test-driven.html">Test-driven development</a>
+        <a href="acceptance test-driven.html">Acceptance test-driven development</a>
+        <a href="continous test-driven.html">Continuous test-driven development</a>
+        <a href="specification by example.html">Specification by example</a>
+        <a href="data-driven development.html">Data-driven development</a>
+        <a href="data-oriented.html">Data-oriented design</a>
+        <a href="design-driven.html">Design-driven design</a>
+    </nav>
+    <div class="container">
+        <section id="mis-on-ddd">
+            <h2>Mis on DDD?</h2>
+            <p>
+                Design-driven development (DDD) on arendusmeetod, kus disain on protsessi keskmes ja mängib olulist rolli toote arendamise kõigis etappides. Selle meetodi eesmärk on luua kasutajakeskseid lahendusi, mis lähtuvad reaalsetest probleemidest ja vajadustest. Protsess hõlmab pidevat iteratsiooni, kus disain ja kasutajakogemus (UX) kujundavad tarkvaraarenduse prioriteete.
+            </p>
+        </section>
+        <img src="../Pildid/ddd.png" alt="DDD" style="width: 40%; height: auto;">
+        <section id="eelised-ja-puudused">
+            <h2>DDD eelised ja puudused</h2>
+            <h3>Eelised:</h3>
+            <ul>
+                <li>Kasutajakesksus: Lõpptulemus vastab paremini kasutajate ootustele ja vajadustele.</li>
+                <li>Väiksemad riskid: Probleeme tuvastatakse ja lahendatakse enne arenduse hilisemat faasi, vähendades ümbertegemise kulusid.</li>
+                <li>Tiimitöö edendamine: Tugev koostöö disaini ja arenduse vahel aitab vältida kommunikatsioonilõkse.</li>
+            </ul>
+            <h3>Puudused:</h3>
+            <ul>
+                <li>Aeganõudev: Iteratiivsed testimised ja disainitsüklid võivad projekti ajakava pikendada.</li>
+                <li>Kulukus: Intensiivne prototüüpimine ja testimine võivad suurendada arenduskulusid.</li>
+                <li>Vajadus ekspertide järele: Meetod nõuab kogenud disainerite ja kasutajauuringute spetsialistide osalemist.</li>
+            </ul>
+        </section>
+
+        <section id="vahendid">
+            <h2>Näide vahendist: Figma</h2>
+            <p>
+                Figma on pilvepõhine tööriist, mida kasutatakse disainide loomise, prototüüpimise ja meeskonnatöö hõlbustamiseks. See sobib ideaalselt DDD jaoks, kuna võimaldab:
+            </p>
+            <ul>
+                <li>Reaalajas koostööd disainerite ja arendajate vahel.</li>
+                <li>Kiiret iteratsiooni ja prototüüpide jagamist kasutajatega testimiseks.</li>
+                <li>Integratsiooni arendajatele oluliste tööriistadega, nagu Zeplin või Jira.</li>
+            </ul>
+        </section>
+
+        <section id="viited">
+            <h2>Viited ja lingid</h2>
+            <ul>
+                <li><a href="https://divami.com/blogs/the-design-driven-development-approach/">What is Design-Driven Development?</a></li>
+                <li><a href="https://www.uxpin.com/studio/blog/design-driven-development/">Design-driven development in practice</a></li>
+                <li><a href="https://www.figma.com" target="_blank">Figma: Collaborative interface design tool</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Design-Driven Development. Kõik õigused kaitstud.</p>
+    </footer>
+</body>
+</html>

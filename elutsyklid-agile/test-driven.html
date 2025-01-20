@@ -1,0 +1,170 @@
+<!-- - Uuendage eelnevat Agile osa nupuga "loe rohkem siit" mis viib teie konspektsaidil 
+ uuele pealehelt kättesaadavale jaotusele
+- See lehe uus osa keskendub spetsiifiliselt erinevatele agiilsetele arendusmetoodikatele. Täpsem sisu:
+- - Kirjeldab agiilset arendust või viitab eelnevalt agiilse kohta kirjutatud lehele
+- - loetleb eraldi lehtedena järgmised programmeerimistiilid mille sisud peaksid sisaldama:
+- = - kirjeldust
+- = - joonis vastava arendustsükli kohta
+- = - selle arendusmeetodi head ja vead
+- = - Näide ühest case-vahendist mis toetab antud arendusstiili arendusmeeskonnatöös (üks vahend võib toetada mitut erinevat arendusstiili, mispuhul sobib kui sama vahend on mitme erineva arendusstiili lehel)
+- = - ning viited/lingid kust saite info.
+- - Agiilsed programmeerimisstiilid:
+- = - Behavior-driven development
+- = - Design-driven development
+- = - Domain-driven design
+- = - Secure by design
+- = - Test-driven development
+- = - Acceptance test-driven development
+- = - Continuous test-driven development
+- = - Specification by example
+- = - Data-driven development
+- = - Data-oriented design
+ 
+Esitusena panete kõik selle osa juurdelisamisega seotud committid (olgu neid siis üks või mitu)
+*JA*
+Lingi selle lehe osa tavakasutajale kättesaadavale live lehele.
+ 
+Ei taha saada repo linke, committide ajaloo linke-->
+
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-driven development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            margin: 0;
+            padding: 0 1.5rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Test-driven development</h1>
+    </header>
+    <nav>
+        <a href="index.html">Agiilne elutsükkel</a>
+        <a href="#mis-on-ddd">Mis on Test-driven development?</a>
+        <a href="#eelised-ja-puudused">Eelised ja Puudused</a>
+        <a href="#vahendid">Vahendid</a>
+        <a href="#viited">Viited</a>
+    </nav>
+    <nav>
+        <a href="../index.html">Avaleht</a>
+        <a href="behaviour.html">Behavior-driven development</a>
+        <a href="domain-driven.html">Domain-driven design</a>
+        <a href="secure by design.html">Secure by design</a>
+        <a href="test-driven.html">Test-driven development</a>
+        <a href="acceptance test-driven.html">Acceptance test-driven development</a>
+        <a href="continous test-driven.html">Continuous test-driven development</a>
+        <a href="specification by example.html">Specification by example</a>
+        <a href="data-driven development.html">Data-driven development</a>
+        <a href="data-oriented.html">Data-oriented design</a>
+        <a href="design-driven.html">Design-driven design</a>
+    </nav>
+    <div class="container">
+        <section id="mis-on-ddd">
+            <h2>Mis on test-driven development?</h2>
+            <p>
+              Test-driven development (TDD) on tarkvaraarendusmeetod, kus testid kirjutatakse enne koodi. Meetodi peamine eesmärk on tagada kõrge koodikvaliteet ja vältida vigu arenduse varases staadiumis. TDD tsükkel koosneb kolmest põhisammust: kirjuta test, kirjuta kood, refaktoreeri.
+
+              TDD aitab arendajatel keskenduda tarkvara käitumisele ja kvaliteedile, pakkudes samas varajast tagasisidet koodi töökindluse kohta. Seda meetodit kasutatakse sageli koos agiilsete arenduspraktikatega.
+            </p>
+        </section>
+        <img src="../Pildid/TDD.webp" alt="TDD" style="width: 40%; height: auto;">
+        <section id="eelised-ja-puudused">
+            <h2>TDD eelised ja puudused</h2>
+            <h3>Eelised:</h3>
+            <ul>
+                <li>Kvaliteet ja töökindlus: Kõrge testikate ja pidev tagasiside aitab vältida regressioonivigu.</li>
+                <li>Selgemad nõuded: Testide kirjutamine enne koodi selgitab nõudeid ja funktsionaalsuse ulatust.</li>
+                <li>Kergem hooldada: Pidev refaktoreerimine hoiab koodi selge ja hästi struktureeritud.</li>
+                <li>Kiirem probleemide tuvastamine: Vead avastatakse varajases faasis, mis vähendab paranduskulusid.</li>
+            </ul>
+            <h3>Puudused:</h3>
+            <ul>
+                <li>Aeganõudev: Testide loomine ja hooldamine võib alguses olla ajamahukas.</li>
+                <li>Nõuab distsipliini: Arendajad peavad rangelt järgima TDD tsüklit.</li>
+                <li>Kõik ei pruugi olla testitav: Mõned süsteemiosad, nagu kasutajaliidesed või väliste teenuste integratsioonid, võivad vajada täiendavat lähenemist.</li>
+            </ul>
+        </section>
+
+        <section id="vahendid">
+            <h2>Näide vahendist: JUnit</h2>
+            <p>
+              JUnit on populaarne Java-põhine testiraamistik, mis toetab TDD-d.
+            </p>
+            <ul>
+                <li>Funktsioonid: Võimaldab luua ja käivitada üksusteste, toetades automatiseeritud testimist.</li>
+                <li>Sobivus TDD-ga: JUnitiga saab kiiresti kirjutada teste enne koodi ja integreerida need pideva integratsiooni tööriistadega, nagu Jenkins või GitHub Actions.</li>
+            </ul>
+        </section>
+
+        <section id="viited">
+            <h2>Viited ja lingid</h2>
+            <ul>
+                <li><a href="https://testdriven.io/test-driven-development/">What is Test-Driven Development?</a></li>
+                <li><a href="https://www.geeksforgeeks.org/test-driven-development-tdd/">Design-driven development</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Test-Driven Development. Kõik õigused kaitstud.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!-- - Uuendage eelnevat Agile osa nupuga "loe rohkem siit" mis viib teie konspektsaidil 
+ uuele pealehelt kättesaadavale jaotusele
+- See lehe uus osa keskendub spetsiifiliselt erinevatele agiilsetele arendusmetoodikatele. Täpsem sisu:
+- - Kirjeldab agiilset arendust või viitab eelnevalt agiilse kohta kirjutatud lehele
+- - loetleb eraldi lehtedena järgmised programmeerimistiilid mille sisud peaksid sisaldama:
+- = - kirjeldust
+- = - joonis vastava arendustsükli kohta
+- = - selle arendusmeetodi head ja vead
+- = - Näide ühest case-vahendist mis toetab antud arendusstiili arendusmeeskonnatöös (üks vahend võib toetada mitut erinevat arendusstiili, mispuhul sobib kui sama vahend on mitme erineva arendusstiili lehel)
+- = - ning viited/lingid kust saite info.
+- - Agiilsed programmeerimisstiilid:
+- = - Behavior-driven development
+- = - Design-driven development
+- = - Domain-driven design
+- = - Secure by design
+- = - Test-driven development
+- = - Acceptance test-driven development
+- = - Continuous test-driven development
+- = - Specification by example
+- = - Data-driven development
+- = - Data-oriented design
+ 
+Esitusena panete kõik selle osa juurdelisamisega seotud committid (olgu neid siis üks või mitu)
+*JA*
+Lingi selle lehe osa tavakasutajale kättesaadavale live lehele.
+ 
+Ei taha saada repo linke, committide ajaloo linke-->
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-driven design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Põhitaust jääb samaks */
+        }
+        header {
+            background: #FFD700; /* Tumekollane */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #FFF8DC; /* Kreemjas/helekollane */
+            color: #333;
+            padding: 0.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #333;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            margin: 0;
+            padding: 0 1.5rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data-driven development</h1>
+    </header>
+    <nav>
+        <a href="index.html">Agiilne elutsükkel</a>
+        <a href="#mis-on-dod">Mis on Data-driven development?</a>
+        <a href="#eelised-ja-puudused">Eelised ja Puudused</a>
+        <a href="#vahendid">Vahendid</a>
+        <a href="#viited">Viited</a>
+    </nav>
+    <nav>
+        <a href="../index.html">Avaleht</a>
+        <a href="behaviour.html">Behavior-driven development</a>
+        <a href="domain-driven.html">Domain-driven design</a>
+        <a href="secure by design.html">Secure by design</a>
+        <a href="test-driven.html">Test-driven development</a>
+        <a href="acceptance test-driven.html">Acceptance test-driven development</a>
+        <a href="continous test-driven.html">Continuous test-driven development</a>
+        <a href="specification by example.html">Specification by example</a>
+        <a href="data-driven development.html">Data-driven development</a>
+        <a href="data-oriented.html">Data-oriented design</a>
+        <a href="design-driven.html">Design-driven design</a>
+    </nav>
+    <div class="container">
+        <section id="mis-on-dod">
+            <h2>Mis on DDD?</h2>
+            <p>Data-driven development (DDD) on arendusmeetod, mille keskmes on andmete analüüs ja nende kasutamine otsuste tegemisel. Meetod keskendub andmete kogumisele, nende analüüsimisele ja kasutamisele, et suunata toote arendamist, täiustamist ja otsustusprotsessi.
+
+              DDD on eriti populaarne toodete puhul, mis sõltuvad kasutajaandmetest, nagu näiteks veebirakendused, e-kaubanduse platvormid ja masinõppel põhinevad lahendused. Lähenemisviis tagab, et otsused on faktilised ja põhinevad tegelikul kasutajate käitumisel, mitte oletustel või subjektiivsetel hinnangutel.
+            </p>
+        </section>
+        <img src="../Pildid/data_driven_development.jpeg" alt="data_driven_development" style="width: 40%; height: auto;">
+        <section id="eelised-ja-puudused">
+            <h2>Data-driven development eelised ja puudused</h2>
+            <h3>Eelised:</h3>
+            <ul>
+                <li>Objektiivsus otsustes: Otsused tuginevad andmetele, vähendades subjektiivsete arvamuste mõju.</li>
+                <li> Parema kvaliteediga tooted: Kasutajate reaalse käitumise jälgimine võimaldab luua rohkem väärtust pakkuvaid lahendusi.</li>
+                <li>Pidev täiustamine: Iteratiivne lähenemine võimaldab toodet järjepidevalt täiustada, lähtudes värsketest andmetest.</li>
+            </ul>
+            <h3>Puudused:</h3>
+            <ul>
+                <li>Andmete kvaliteet: Halb andmekvaliteet või piiratud juurdepääs andmetele võib viia valede järeldusteni.</li>
+                <li>Keerukus: Tööriistade ja analüüsimeetodite kasutamine nõuab erialateadmisi.</li>
+                <li>Aeganõudvus: Andmete kogumine, analüüs ja tõlgendamine võib olla aeganõudev protsess.</li>
+            </ul>
+        </section>
+
+        <section id="vahendid">
+            <h2>Näide vahendist: Google Analytics</h2>
+            <p>
+                Google Analytics on üks populaarsemaid andmepõhise arenduse tööriistu. See võimaldab:
+            </p>
+            <ul>    
+                <li>Jälgida veebirakenduste ja mobiilirakenduste kasutajate käitumist.</li>  
+                <li>Koguda andmeid, nagu kasutajate sessioonid, konversioonimäärad ja interaktsioonid.</li>
+                <li>Analüüsida erinevaid segmente ja kasutajate teekondi, et teha andmepõhiseid otsuseid.</li>
+            </ul>
+        </section>
+        <section id="viited">
+            <h2>Viited ja lingid</h2>
+            <ul>
+                <li><a href="https://devtalents.com/data-driven-software-development/">What it is?</a></li>
+                <li><a href="https://www.dspace.com/en/pub/home/applicationfields/comp/data_driven_development.cfm">Data Driven developmnet</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Google_Analytics">Google Analytics</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Data-driven development. Kõik õigused kaitstud.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-oriented design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #C71585; /* Tumeroosa */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #FF69B4; /* Heleroosa */
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            margin: 0;
+            padding: 0 1.5rem;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data-oriented design</h1>
+    </header>
+    <nav>
+        <a href="index.html">Agiilne elutsükkel</a>
+        <a href="#mis-on-dod">Mis on DOD?</a>
+        <a href="#eelised-ja-puudused">Eelised ja Puudused</a>
+        <a href="#vahendid">Vahendid</a>
+        <a href="#viited">Viited</a>
+    </nav>
+    <nav>
+        <a href="../index.html">Avaleht</a>
+        <a href="behaviour.html">Behavior-driven development</a>
+        <a href="domain-driven.html">Domain-driven design</a>
+        <a href="secure by design.html">Secure by design</a>
+        <a href="test-driven.html">Test-driven development</a>
+        <a href="acceptance test-driven.html">Acceptance test-driven development</a>
+        <a href="continous test-driven.html">Continuous test-driven development</a>
+        <a href="specification by example.html">Specification by example</a>
+        <a href="data-driven development.html">Data-driven development</a>
+        <a href="data-oriented.html">Data-oriented design</a>
+        <a href="design-driven.html">Design-driven design</a>
+    </nav>
+    <div class="container">
+        <section id="mis-on-dod">
+            <h2>Mis on DOD?</h2>
+            <p>
+                Data-oriented design (DOD) on arendusmeetod, mis keskendub andmete korraldamisele ja töötlemisele viisil, mis maksimeerib süsteemi jõudlust ja efektiivsust. Meetodi eesmärk on optimeerida, kuidas programm andmeid mälu ja protsessori vaatevinklist haldab, et vähendada tarbetut töötlemisaega ja suurendada süsteemi skaleeritavust.
+
+DOD erineb objektorienteeritud programmeerimisest, kuna keskmes pole mitte objektid ja nende käitumine, vaid andmed ja nende töötlemise viis. See lähenemine sobib eriti hästi suure jõudlusega rakenduste, näiteks mängude, simulatsioonide ja andmemahukate süsteemide jaoks.
+            </p>
+        </section>
+        <img src="../Pildid/dod.jpg" alt="DOD" style="width: 40%; height: auto;">
+        <section id="eelised-ja-puudused">
+            <h2>DOD eelised ja puudused</h2>
+            <h3>Eelised:</h3>
+            <ul>
+                <li>Jõudluse optimeerimine: Andmed ja nende töötlus on viidud maksimumini, mis on eriti oluline andmemahukates ja reaalajas rakendustes.</li>
+                <li>Lihtsus süsteemi tasemel: Selge fookus andmevoogudele lihtsustab süsteemi analüüsi ja optimeerimist.</li>
+                <li>Skaleeritavus: DOD süsteemid skaleeruvad hästi suuremate andmemahtude ja keerukusega rakenduste korral.</li>
+            </ul>
+            <h3>Puudused:</h3>
+            <ul>
+                <li>Keerukus arendajatele: Nõuab arendajatelt sügavat arusaamist andmestruktuuridest, mälu toimimisest ja protsessori arhitektuurist.</li>
+                <li>Vähem paindlikkust: Ranged andmevoogude ja struktuuride nõuded võivad muuta süsteemi keerulisemaks muutustele kohandada.</li>
+                <li>Aeganõudev planeerimine: Andmete ja algoritmide optimeerimine võib võtta rohkem aega võrreldes tavapärase lähenemisega.</li>
+            </ul>
+        </section>
+
+        <section id="vahendid">
+            <h2>Näide vahendist: Unity DOTS (Data-Oriented Technology Stack)</h2>
+            <p>
+                Unity DOTS on andmepõhine tehnoloogiaplokk, mis on loodud mängude ja muude kõrge jõudlusega rakenduste jaoks. See põhineb kolmel komponendil:
+            </p>
+            <ul>    
+                <li>ECS (Entity Component System): Muudab mängude loogika andmekeskseks.
+                <li>C# Job System: Võimaldab andmete paralleelse töötlemise, optimeerides protsessori kasutust.
+                <li>Burst Compiler: Koostab koodi madala taseme optimeeritult, et tagada maksimaalne jõudlus.
+                <li>DOTS toetab arendajaid, kes soovivad kasutada DOD meetodit, pakkudes tööriistu ja raamistikke, mis lihtsustavad andmevoogude optimeerimist.
+                    
+                    
+                    
+                    Reaalajas koostööd disainerite ja arendajate vahel.</li>
+                <li>Kiiret iteratsiooni ja prototüüpide jagamist kasutajatega testimiseks.</li>
+                <li>Integratsiooni arendajatele oluliste tööriistadega, nagu Zeplin või Jira.</li>
+            </ul>
+        </section>
+
+        <section id="viited">
+            <h2>Viited ja lingid</h2>
+            <ul>
+                <li><a href="https://www.slideshare.net/slideshow/introduction-to-data-oriented-design/5679785">What is DOD?</a></li>
+                <li><a href="https://betterprogramming.pub/data-oriented-design-an-introduction-384c03e75438">DOD in practice</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Data-oriented design. Kõik õigused kaitstud.</p>
+    </footer>
+</body>
+</html>
+
+
