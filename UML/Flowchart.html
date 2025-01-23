@@ -1,1 +1,294 @@
-.
+<!-- Tehke omal ainemappi UML Diagrammide jaoks eraldi saidi osa.
+
+Kirjutage sinna eraldi osa flowcharti ja ERD diagrammi kohta. 
+(Flowcharti oleme juba kasutanud bitcoin kalkulaatori juures, ERDd veel mitte)
+https://drawio-app.com/examples/
+https://drawio-app.com/erd/
+https://drawio-app.com/blog/uml-diagrams/
+
+UML indeks: 
+- loetleb üles lingid spetsiifilistele uml diagrammidele
+- kirjeldab ära misasi üleüldse on Unified Modeling Language (UML)
+
+UML > ERD:
+ - Kirjeldab ära mis on ERD diagrammid
+ - Kus neid kasutatakse
+ - toob välja eraldi joonistega ühenduselemendid
+ - mis on Primary Key, Foreign Key, Composite Key, ja lihtsalt Key?
+ - Viited infoallikaile
+
+UML > Flowchart_
+ - Kirjeldab ära mis on Flowchart diagrammid
+ - Kus neid kasutatakse
+ - toob välja eraldi kujundite tähendused
+ - Viitab näidisena juba eelnevalt Bitcoinäpi tegemisel tehtud Vooskeemi juurde
+ - Viited infoallikaile
+
+
+
+esitusena on kolm committi, üks indeksi kohta, teine flowchart kohta, kolmas ERD kohta-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="
+    font-family: 'Cursive', sans-serif; /* Elegantne ja õrn font */
+    font-size: 3em; /* Suur pealkiri */
+    color: #FF69B4; /* Ilus roosa toon */
+    text-align: center; /* Keskjoondus */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Kerge vari */
+    margin: 40px 0; /* Ülemine ja alumine vahe */
+    padding: 15px; /* Ruumi ümber pealkirja */
+    background: linear-gradient(to right, #FFB6C1, #FF69B4); /* Roosa gradient */
+    border-radius: 15px; /* Ümarad servad */
+    border: 2px solid #FF69B4; /* Peen roosa serv */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Pehme varju efekt */
+">
+    Flowchart
+</h1>
+<h2 style="
+font-family: 'Verdana', sans-serif;
+font-size: 2em;
+color: #4CAF50;
+text-align: center;
+text-transform: uppercase;
+margin: 30px 0;
+padding-bottom: 10px;
+border-bottom: 3px solid #4CAF50;
+letter-spacing: 1px;
+"> Mis on Flowchart diagrammid?
+</h2>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart Diagramm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fondi määramine kogu lehele */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Flowchart ehk vooskeemi diagramm on graafiline tööriist, mis esitab protsessi, süsteemi või töövoo järjestuse ja etapid. Seda kasutatakse, et visualiseerida tegevuste, otsuste ja protsesside järjestust või loogikat. 
+        Flowchartide eesmärk on aidata selgitada keerukaid protsesse lihtsa ja arusaadava graafilise kujutise kaudu.
+    </p>
+
+    <hr/>
+    <ul>
+        Flowchart sisaldab järgmist:
+            <li>Ovaal: Algus ja lõpp</li>
+            <li>Ristkülikud: Tegevused või toimingud</li>
+            <li>Rombid: Otsustuspunktid (jah/ei küsimused)</li>
+            <li>Nooled: Juhised, mis näitavad tegevuste järjestust</li>
+        </ul>
+</body>
+</html>
+
+  
+  
+
+
+
+
+<h2 style="
+font-family: 'Verdana', sans-serif;
+font-size: 2em;
+color: #4CAF50;
+text-align: center;
+text-transform: uppercase;
+margin: 30px 0;
+padding-bottom: 10px;
+border-bottom: 3px solid #4CAF50;
+letter-spacing: 1px;
+">
+Kus Flowcharti kasutatakse?
+</h2>
+
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Tarkvaraarendus
+</p>
+
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Äriprotsesside analüüs
+</p>
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Õppevahendid
+</p>
+
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Süsteemide analüüs
+</p>
+ 
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Testimine ja vigade leidmine
+</p>
+    <hr/>
+
+    <h2>Kujundite tähendused</h2> 
+    <p>
+        <b>Ovaal</b> (Algus või lõpp)
+
+    Tähistab protsessi algust ja lõppu. See on voodiagrammi kõige esimeses ja viimases astmes.
+    Näide: "Protsess algab" või "Protsess lõpeb".</p>
+    
+    
+    <p><b>Ristkülik</b> (Tegevus)
+    
+    Tähistab tegevust või ülesannet, mida tuleb täita. Seda kasutatakse näiteks arvutuste tegemiseks, andmete sisestamiseks või tegevuse lõpuleviimiseks.
+    Näide: "Sisesta andmed" või "Salvesta tulemused".</p>
+    
+    
+    <p><b>Romb</b> (Otsus)
+    
+    Kasutatakse punktides, kus tuleb teha valik või otsus. Rombist väljuvad harud tähistavad erinevaid teid sõltuvalt valikust.
+    Näide: "Kas andmed on korrektseid?" (jah või ei otsus).</p>
+    
+    
+    <p><b>Nooled</b> (Flow ehk voo näitamine)
+    
+    Näitavad tegevuste või otsuste järjestust ja voogu, millises järjekorras tegevusi tehakse.</p>
+    
+    
+    
+    <hr/>
+
+    <h2>Klikka siia:</h2>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li style="margin: 10px 0;">
+            <a href="/Bitcoin/flowcharti.html" style="
+                display: inline-block;
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                color: #ffffff;
+                background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                width: 200px;
+                text-align: center;
+            "
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                Flowchart diagramm
+            </a>
+        </li>       
+    
+    
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li style="margin: 10px 0;">
+                <a href="erd.html" style="
+                    display: inline-block;
+                    font-family: Arial, sans-serif;
+                    font-size: 18px;
+                    color: #ffffff;
+                    background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                    padding: 15px 30px;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                    width: 200px;
+                    text-align: center;
+                "
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                    ERD
+                </a>
+                <li style="margin: 10px 0;">
+                    <a href="index.html" style="
+                        display: inline-block;
+                        font-family: Arial, sans-serif;
+                        font-size: 18px;
+                        color: #ffffff;
+                        background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                        padding: 15px 30px;
+                        text-decoration: none;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                        width: 200px;
+                        text-align: center;
+                    "
+                    onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+                    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                        UML
+                    </a>
+    </ul>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li style="margin: 10px 0;">
+            <a href="../index.html" style="display: inline-block; font-size: 18px; color: #ffffff; background-color: #8a2be2; padding: 15px 30px; text-decoration: none; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+                Pealeht
+            </a>
+        </li>
+    </ul>
+    <h2>Kasutatud kirjandus:</h2>
+    <a href="https://www.lucidchart.com/pages/what-is-a-flowchart-tutorial">Vooskeemist rohkem</a>
+    <br/>
+    <a href="https://en.wikipedia.org/wiki/Flowchart">Flowchartist rohkem</a>
+    <br/>
+    
+  
+</table>
+</body>
+</html>
