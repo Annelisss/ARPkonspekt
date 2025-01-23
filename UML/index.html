@@ -1,1 +1,257 @@
-.
+<!-- Tehke omal ainemappi UML Diagrammide jaoks eraldi saidi osa.
+
+Kirjutage sinna eraldi osa flowcharti ja ERD diagrammi kohta. (Flowcharti oleme juba kasutanud bitcoin kalkulaatori juures, ERDd veel mitte)
+https://drawio-app.com/examples/
+https://drawio-app.com/erd/
+https://drawio-app.com/blog/uml-diagrams/
+
+UML indeks: 
+- loetleb üles lingid spetsiifilistele uml diagrammidele
+- kirjeldab ära misasi üleüldse on Unified Modeling Language (UML)
+
+UML > ERD:
+ - Kirjeldab ära mis on ERD diagrammid
+ - Kus neid kasutatakse
+ - toob välja eraldi joonistega ühenduselemendid
+ - mis on Primary Key, Foreign Key, Composite Key, ja lihtsalt Key?
+ - Viited infoallikaile
+
+UML > Flowchart_
+ - Kirjeldab ära mis on Flowchart diagrammid
+ - Kus neid kasutatakse
+ - toob välja eraldi kujundite tähendused
+ - Viitab näidisena juba eelnevalt Bitcoinäpi tegemisel tehtud Vooskeemi juurde
+ - Viited infoallikaile
+
+
+
+esitusena on kolm committi, üks indeksi kohta, teine flowchart kohta, kolmas ERD kohta-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="
+    font-family: 'Cursive', sans-serif; /* Elegantne ja õrn font */
+    font-size: 3em; /* Suur pealkiri */
+    color: #FF69B4; /* Ilus roosa toon */
+    text-align: center; /* Keskjoondus */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Kerge vari */
+    margin: 40px 0; /* Ülemine ja alumine vahe */
+    padding: 15px; /* Ruumi ümber pealkirja */
+    background: linear-gradient(to right, #FFB6C1, #FF69B4); /* Roosa gradient */
+    border-radius: 15px; /* Ümarad servad */
+    border: 2px solid #FF69B4; /* Peen roosa serv */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Pehme varju efekt */
+">
+    UML
+</h1>
+<h2 style="
+font-family: 'Verdana', sans-serif;
+font-size: 2em;
+color: #4CAF50;
+text-align: center;
+text-transform: uppercase;
+margin: 30px 0;
+padding-bottom: 10px;
+border-bottom: 3px solid #4CAF50;
+letter-spacing: 1px;
+"> Mis on Unified Modeling Language (UML)?
+</h2>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart Diagramm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fondi määramine kogu lehele */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Unified Modeling Language (UML) on standardiseeritud visuaalne modelleerimiskeel, mis aitab kirjeldada ja dokumenteerida tarkvarasüsteemide arhitektuuri, komponente ja käitumist. UML võimaldab arendajatel, analüütikutel, süsteemiarhitektidel ja teiste erialade esindajatel ühiselt mõista keerukaid süsteeme, vähendada arusaamatusi ning lihtsustada kommunikatsiooni projekti osapoolte vahel.
+    </p>
+
+    
+
+    <hr/>
+    <ul>
+        Põhijooned:
+
+            <li>Visuaalsed diagrammid, mis standardiseeritud sümbolite abil esitavad süsteemi erinevaid aspekte.</li>
+            <li>Sobib nii objektiorienteeritud tarkvara modelleerimiseks kui ka äriprotsesside ja muude süsteemide kirjeldamiseks.</li>
+            <li>Aitab jäädvustada ja suhelda disainiotsuseid, vähendada projekti riske ning teha süsteemi arenduse ja hoolduse lihtsamaks.</li>
+        </ul>
+</body>
+</html>
+
+<h2 style="
+font-family: 'Verdana', sans-serif;
+font-size: 2em;
+color: #4CAF50;
+text-align: center;
+text-transform: uppercase;
+margin: 30px 0;
+padding-bottom: 10px;
+border-bottom: 3px solid #4CAF50;
+letter-spacing: 1px;
+">
+UML liigid
+</h2>
+
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Struktuuridiagrammid (Structure diagram) näitavad süsteemi staatilist struktuuri:
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/" target="_blank">Klassidiagramm </a>
+Kirjeldab süsteemi klasse, nende atribuute, meetodeid ja seoseid.
+</p>
+<a href="https://www.youtube.com/watch?app=desktop&v=ao1ESgIy2Ws" target="_blank">Objekti diagramm </a>
+Näitab süsteemi hetkeseisu, kus on kirjeldatud objektid ja nende vaheline teave.
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-component-diagram/" target="_blank">Komponentide diagramm </a>
+Näitab süsteemi mooduleid ja nende vahelisi seoseid.
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/" target="_blank">Juurutusdiagramm (Deployment Diagram)</a>
+Illustreerib, kuidas süsteemi komponendid on füüsiliselt jaotatud riistvarale.
+</p>
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+Käitumisdiagrammid (Behavior diagram) näitavad süsteemi dünaamilist käitumist:
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-activity-diagram/" target="_blank">Tegevusdiagramm (Activity Diagram)</a>
+Illustreerib protsesside töövoogu, sealhulgas otsuseid ja paralleelseid tegevusi.
+</p>
+<a href="https://www.lucidchart.com/pages/uml-use-case-diagram">Kasutusjuhtumi diagramm (Use Case Diagramm)</a>
+Näitab, kuidas kasutajad suhtlevad süsteemiga ning milliseid funktsioone süsteem pakub.
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/about-state-diagrams/" target="_blank">Oleku diagramm (State Diagram)</a>
+Näitab, kuidas objekt liigub erinevates olekutes vastavalt sündmustele.
+</p>
+<a href="https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/" target="_blank">Jada Diagramm (Sequence Diagram)</a>
+Näitab, kuidas kasutajad suhtlevad süsteemiga ning milliseid funktsioone süsteem pakub.
+</p>
+<a href="https://guides.visual-paradigm.com/what-is-interaction-diagrams-in-uml/" target="_blank">Koostoimediagramm (Interaction Diagram)</a>
+Näitab, kuidas objekt liigub erinevates olekutes vastavalt sündmustele.
+</p>
+
+</p>
+<p style="
+font-family: 'Arial', sans-serif;
+font-size: 1.2em;
+color: #333;
+line-height: 1.6;
+margin: 15px 0;
+padding-left: 20px;
+background-color: #f4f4f4;
+border-left: 4px solid #4CAF50;
+border-radius: 5px;
+">
+</p>
+</p>
+</p>
+</p>
+
+    <hr/>
+
+    <h2>UML diagramm</h2> 
+    <p>
+        <br/>
+        <tr>
+            <td> <img src="/Pildid/uml.jpg " /> </td>
+        </tr>
+        <tr>
+    <br/>
+    
+    
+    <hr/>
+
+    <h2>Klikka siia:</h2>
+            
+        </li>
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li style="margin: 10px 0;">
+                <a href="erd.html" style="
+                    display: inline-block;
+                    font-family: Arial, sans-serif;
+                    font-size: 18px;
+                    color: #ffffff;
+                    background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                    padding: 15px 30px;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                    width: 200px;
+                    text-align: center;
+                "
+                onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+                onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                    ERD
+                </a>
+                
+            </li>
+        <li style="margin: 10px 0;">
+            <a href="flowchart.html" style="
+                display: inline-block;
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                color: #ffffff;
+                background: linear-gradient(90deg, #6a5acd, #8a2be2);
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+                width: 200px;
+                text-align: center;
+            "
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(0, 0, 0, 0.2)';">
+                Flowchart
+            </a>
+
+    </ul>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li style="margin: 10px 0;">
+            <a href="../index.html" style="display: inline-block; font-size: 18px; color: #ffffff; background-color: #8a2be2; padding: 15px 30px; text-decoration: none; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+                Pealeht
+            </a>
+        </li>
+    </ul>
+    <h2>Kasutatud kirjandus:</h2>
+    <a href="https://www.coursera.org/lecture/concepts-of-object-oriented-programming/uml-class-diagrams-RskC0?utm_medium=sem&utm_source=gg&utm_campaign=B2C_EMEA__coursera_FTCOF_career-academy_pmax-multiple-audiences-country-multi&campaignid=20858198824&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&adposition=&creativeid=&hide_mobile_promo&gad_source=1&gclid=CjwKCAiA34S7BhAtEiwACZzv4QMf4Qp4VnvUOexdSv0S8aWwknrytpaxlcMeeRWCQLHkPuD1Enm4rRoCOYgQAvD_BwE">UML</a>
+    <br/>
+    <a href="https://drawio-app.com/blog/uml-diagrams/">UML diagrammid</a>
+    <br/>
+    
+  
+</table>
+</body>
+</html>
